@@ -85,6 +85,8 @@ jobs:
       # Step 9: Build Android on EAS
       - name: Build Android on EAS
         id: build_android
+        env: # <--- 新增这部分，强制注入 Token
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
         run: |
           echo "Building Android APK on EAS (version from package.json)..."
           eas build --platform android --profile production --non-interactive --no-wait --json > android_build.json
