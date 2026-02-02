@@ -177,7 +177,7 @@ export default {
     },
     extra: {
       eas: {
-        projectId: '80096eaf-3ad0-4b87-a466-15f04da1bacc'
+        projectId: '7124f60b-1fe7-40e1-b028-5f3a3bab183d'
       },
       appVersion
     }
